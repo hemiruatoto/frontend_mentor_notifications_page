@@ -1,0 +1,100 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+
+:root {
+    --primary: navy;
+    --black: black;
+    --white: white;
+    --grey: grey;
+    --body-bg: rgb(226, 230, 235);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--body-bg);
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.btn.btn-link {
+    background: transparent;
+    border: none;
+}
+
+.app {
+    min-width: 370px;
+    max-width: 700px;
+    margin: 2rem auto 3rem;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.notifications-header {
+    display: flex;
+}
+
+.notifications-header .heading {
+    display: flex;
+    gap: 0.6rem;
+    flex: 1;
+}
+
+.notifications-header .heading h1 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.notifications-header .heading .badge {
+    padding: 0 0.8rem;
+    background-color: var(--primary);
+    border-radius: 0.4rem;
+    color: var(--white);
+    font-weight: 800;
+}
+
+.notifications-header .actions .btn {
+    color: var(--grey);
+    font-size: 0.9rem;
+}
+
+.notifications .notifications-list {
+    padding: 2rem 0 0;
+}
+
+.notifications .notifications-list .notification {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.notifications .notifications-list .notification .notification-image {
+    max-width: 3rem;
+}
+
+.notifications .notifications-list .notification .notification-body {
+    flex-grow: 1;
+}
+
+.notifications .notifications-list .notification .notification-text {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.notifications .notifications-list .notification .notification-badge {
+    width: 0.8rem;
+    min-width: 0.8rem;
+}
+
+.notifications .notifications-list .notification .notification-meta {
+    color: var(--grey);
+}
